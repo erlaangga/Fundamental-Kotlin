@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
         - Character (Char, String)
         - Boolean (Boolean)
         - Array (arrayOf)
-    Operator: +, -, *, /, %, ++, --, ==, !=, >, <, >=, <=, &&, ||, !
+    Operator: +, -, *, /, %, ++, --, =, +=, -=, *=, /=, %=, ==, !=, >, <, >=, <=, &&, ||, !
     Branching: if, if else, if else if else, when, when else
     Looping: while, do while, for in
     Class can have constructor
