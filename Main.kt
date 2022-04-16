@@ -30,11 +30,11 @@ fun main(args: Array<String>) {
         - Character (Char, String)
         - Boolean (Boolean)
         - Array (arrayOf)
-    Operator: +, -, *, /, %, ++, --, =, +=, -=, *=, /=, %=, ==, !=, >, <, >=, <=, &&, ||, !
+    Operator: +, -, *, /, %, ++, --, =, +=, -=, *=, /=, %=, ==, !=, >, <, >=, <=, &&, ||, !, as, is, ?, as?, !is, in
     Branching: if, if else, if else if else, when, when else
     Looping: while, do while, for in
     Class can have constructor
     Function supports default parameter
-
+    Exception: try catch finally
     * */
 }
