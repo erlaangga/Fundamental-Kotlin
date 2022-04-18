@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     println("My Float is $myFloat")
     println("My Double is $myDouble")
     println("Double divide float is ${myDouble/myFloat}")
-//    To have null value variable must have safe sign in data type
+    // To have null value variable must have safe sign in data type
     var isMyFloatBigger: Boolean? = null
     println(isMyFloatBigger)
     isMyFloatBigger = myFloat > myDouble
@@ -37,4 +37,38 @@ fun main(args: Array<String>) {
     Function supports default parameter
     Exception: try catch finally
     * */
+
+
+    // Pair
+    val fruits = "banana" to "apple"
+    println("I have ${fruits.first} and ${fruits.second}")
+    // Triple
+    val fruitsCount = Triple(1, 3, 8)
+    println("I have ${fruitsCount.first} ${fruits.first}, ${fruitsCount.second} ${fruits.second}s, and ${fruitsCount.third} mangos.")
+
+    // Extension
+    // extension cannot access private property
+//    fun String.hasSpace(): Boolean {
+//        val found = this.find { it == ' ' }
+//        return found != null
+//    }
+
+    // on line single expression function
+    fun String.hasSpace() = find { it == ' ' } != null
+
+    val question = "Does it have space?"
+    println("${question} ${question.hasSpace()}.")
+
+    // List and Map
+    var lis = listOf("Nasi", "Daging", "Buah", "Telur", "Minyak")
+    // list is immutable, mutableList is mutable
+    val map = mapOf("lapar" to "makan", "haus" to "minum")
+    // map is immutable, hashmap is mutable
+    println(lis)
+    println(map)
+
+    // lambda
+    val isOdd = {num: Int -> (num%2 != 0)}
+    println("Is number 31 odd? " + isOdd(31))
+
 }
